@@ -1,7 +1,6 @@
 # 🧑‍💻Smart Merge Conflictor
 
-A Python tool to detect and resolve Git merge conflicts intelligently.
-🔀 A smart tool to help resolve Git merge conflicts using AI.
+A Python tool to detect and resolve Git merge conflicts intelligently.🔀 A smart tool to help resolve Git merge conflicts using AI.
 
 
 ## 🚀 Features
@@ -12,7 +11,7 @@ A Python tool to detect and resolve Git merge conflicts intelligently.
 - Example conflicts provided for testing.
 - Detects conflict markers in files
 - Shows both versions clearly
-- Optional: Uses AI (GPT) to merge smartly
+- Uses AI (GPT) to merge smartly
 
 ## 🧠How to Use
 1. Run `main.py`
@@ -30,12 +29,23 @@ def greet():
 # --- Incoming version ---
 def greet():
     print("Hello from feature branch")
-
+```
 
 **Output:**
+```python
+--- Conflict #1 ---
+# HEAD:
+def greet():
+    print("Hello from main branch")
+# INCOMING:
+def greet():
+    print("Hello from feature branch")
+
+AI Suggested Merge:
 def greet():
     print("Hello from both branches - main and feature")
 
+```
 
 
 ## Future Work
@@ -51,7 +61,7 @@ git clone https://github.com/kunalxt/smart-merge-conflictor.git
 cd smart-merge-conflictor
 pip install -r requirements.txt
 
-
+```
 
 
 ## 🛡 License
@@ -62,7 +72,7 @@ pip install -r requirements.txt
 
 ## 📌 Topics
 
-**git** **merge** **ai** **conflict-resolution** **llm** **openai** **ollama** **llama3**
+**git**, **merge**, **ai**, **conflict-resolution**, **llm**, **openai**, **ollama**, 
 
 ---
 
