@@ -34,3 +34,20 @@ print("Hi from feature")
 ## Future Work
 - GUI merge tool
 - Semantic diff using AST
+
+
+🔀 A smart tool to help resolve Git merge conflicts using AI.
+
+## 🚀 Features
+
+- Parses `.conflict` files containing Git-style conflict markers.
+- Uses local LLMs via [Ollama](https://ollama.com/) (e.g., LLaMA 3) to suggest conflict resolutions.
+- Easily extensible and works offline.
+- Example conflicts provided for testing.
+
+## 🛠️ Installation
+
+```bash
+git clone https://github.com/kunalxt/smart-merge-conflictor.git
+cd smart-merge-conflictor
+pip install -r requirements.txt
