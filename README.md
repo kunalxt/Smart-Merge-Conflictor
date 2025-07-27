@@ -23,20 +23,20 @@ A Python tool to detect and resolve Git merge conflicts intelligently.
 
 **Input file:**
 ```python
-<<<<<<< HEAD
-print("Hi from main")
-=======
-print("Hi from feature")
->>>>>>> feature
-```
+# --- Conflict #1 ---
+# --- HEAD version ---
+def greet():
+    print("Hello from main branch")
+# --- Incoming version ---
+def greet():
+    print("Hello from feature branch")
+
 
 **Output:**
-```python
-# --- HEAD version ---
-print("Hi from main")
-# --- Incoming version ---
-print("Hi from feature")
-```
+def greet():
+    print("Hello from both branches - main and feature")
+
+
 
 ## Future Work
 - GUI merge tool
@@ -50,6 +50,7 @@ print("Hi from feature")
 git clone https://github.com/kunalxt/smart-merge-conflictor.git
 cd smart-merge-conflictor
 pip install -r requirements.txt
+
 
 
 
