@@ -1,8 +1,15 @@
 # Smart Merge Conflictor
 
 A Python tool to detect and resolve Git merge conflicts intelligently.
+🔀 A smart tool to help resolve Git merge conflicts using AI.
 
-## Features
+
+## 🚀 Features
+
+- Parses `.conflict` files containing Git-style conflict markers.
+- Uses local LLMs via [Ollama](https://ollama.com/) (e.g., LLaMA 3) to suggest conflict resolutions.
+- Easily extensible and works offline.
+- Example conflicts provided for testing.
 - Detects conflict markers in files
 - Shows both versions clearly
 - Optional: Uses AI (GPT) to merge smartly
@@ -36,14 +43,8 @@ print("Hi from feature")
 - Semantic diff using AST
 
 
-🔀 A smart tool to help resolve Git merge conflicts using AI.
 
-## 🚀 Features
 
-- Parses `.conflict` files containing Git-style conflict markers.
-- Uses local LLMs via [Ollama](https://ollama.com/) (e.g., LLaMA 3) to suggest conflict resolutions.
-- Easily extensible and works offline.
-- Example conflicts provided for testing.
 
 ## 🛠️ Installation
 
